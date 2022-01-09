@@ -11,5 +11,196 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-color);
 }
+
 /* Header Styling */
+header {
+  padding: 20px 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin: 10px 5px;
+  border: 5px solid var(--tertiary-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+header a {
+  text-decoration: none;
+  padding: 0;
+  color: var(--secondary-color);
+}
+header nav {
+  margin: 30px 0;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: bolder;
+  font: 1.55vw;
+  font-size: 30px;
+}
+header nav ul li a:hover {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 15px;
+}
+/* Hero Styling */
+.hero {
+  background-image: url(./images/pexels-trev-adams-6379280.jpg);
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.me img {
+  width: 50%;
+  height: 50%;
+  margin: 2%;
+  position: relative;
+  right: 624px;
+}
+.quote {
+  position: absolute;
+  top: 435px;
+  left: 1561px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  border-radius: 15px;
+  padding: 2px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* Section Title Styling */
+.section-title {
+  padding: 10px 0px 10px 50px;
+  width: 10%;
+  position: relative;
+  margin: 30px auto 7px auto;
+  font-size: 30px;
+}
+
+section p {
+  text-align: center;
+  font-weight: bolder;
+  font: 1.55vw;
+  position: relative;
+}
+
+/* Work Section */
+.my-Work {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.my-Work article {
+  border: 3px solid var(--tertiary-color);
+  flex: 1;
+}
+
+.top-content a {
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.top-content img {
+  margin: auto;
+}
+.app a {
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.app img:not(:first-child) {
+  width: 150px;
+  height: 150px;
+}
+/* Contact Section Style */
+
+#contact-Me ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 15px;
+  font-weight: bolder;
+  font: 1.55vw;
+  font-size: 30px;
+}
+.flew-row {
+  display: flex;
+}
+
+/* Media Query for smaller desktop screens */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    width: 100%;
+    flex: 1 100%;
+  }
+  .hero img h2 {
+    width: 100%;
+    flex: 1 100%;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .app {
+    flex: 0 70%;
+  }
+}
+
+/* Media Query for tablelts */
+@media screen and (max-width: 768px) {
+  #my-Work {
+    border: red solid 10px;
+    padding: 10px 15px;
+  }
+}
+
+/* Media Query for mobile and smaller devices */
+@media screen and (max-width: 575px) {
+  section > * {
+    font-size: 50px;
+  }
+}
